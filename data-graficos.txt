@@ -1,16 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-graficas1',
-  templateUrl: './graficas1.component.html',
-  styles: []
-})
-export class Graficas1Component implements OnInit {
-
-
-  public pieChart:string[] = ['capo1', ' griego', 'pepe'];
-
-  graficos: any = {
+graficos: any = {
     'grafico1': {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
       'data':  [24, 30, 46],
@@ -36,13 +24,3 @@ export class Graficas1Component implements OnInit {
       'leyenda': '¿Le importa que le den gases?'
     },
   };
-
-  constructor() {
-    console.log(this.graficos.grafico1.data);
-   }
-  
-
-  ngOnInit() {
-  }
-
-}
