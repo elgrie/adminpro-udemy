@@ -11,7 +11,7 @@ export class IncrementadorComponent implements OnInit {
 
  @Input() porcentaje: number =50;
  @Input() leyenda: string="Leyenda2";
- @ViewChild('txtProgress')txtProgress:ElementRef:
+ @ViewChild('txtProgress')txtProgress:ElementRef;
  //ouyput es un evento
  @Output() cambioValor:EventEmitter<number> = new EventEmitter();
   constructor() { }

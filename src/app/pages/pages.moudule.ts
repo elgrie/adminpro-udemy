@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+
 
 
 
@@ -22,9 +24,8 @@ DashboardComponent,
 ProgressComponent,
 PagesComponent,
 IncrementadorComponent,
-GraficoDonaComponent
-
-
+GraficoDonaComponent,
+AccountSettingsComponent
 ],
 exports: [
     Graficas1Component,

@@ -1,4 +1,5 @@
 
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,8 +13,13 @@ import { RegisterComponent } from './login/register.component';
 import { APP_ROUTES } from './app.routes';
 
 
-//Modulos importados
+// Modulos importados
 import { PagesModule } from './pages/pages.moudule';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
+
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,12 +27,14 @@ import { PagesModule } from './pages/pages.moudule';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
